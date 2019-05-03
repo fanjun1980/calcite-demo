@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "defaultSchema": "SALES",
+  "schemas": [
+    {
+      "name": "SALES",
+      "tables": [
+        {
+          "type": "custom",
+          "name": "Parts",
+          "factory": "com.fanjun1980.calcite.plan.PartsTableFactory"
+        }
+      ]
+    }
+  ]
+}

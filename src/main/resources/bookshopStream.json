@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "defaultSchema": "bookshopstream",
+  "schemas": [
+    {
+      "name": "bookshopstream",
+      "tables": [
+        {
+          "name": "SALES",
+          "type": "custom",
+          "factory": "com.fanjun1980.calcite.stream.InMemoryStreamTableFactory",
+          "stream": {
+            "stream": true
+          },
+          "operand": {
+            "timeformat": "HH:mm:ss",
+            "p2": "world"
+          }
+        },
+        {
+          "name": "PRODUCT",
+          "type": "custom",
+          "factory": "com.fanjun1980.calcite.stream.InMemoryStreamTableFactory",
+          "stream": {
+            "stream": true
+          },
+          "operand": {
+            "p1": "hello",
+            "p2": "world"
+          }
+        }
+      ]
+    }
+  ]
+}
