@@ -58,7 +58,7 @@ public class SimpleQueryPlanner {
         // Create the query planner with the toy schema
         SimpleQueryPlanner queryPlanner = new SimpleQueryPlanner(connection.getRootSchema()
                 .getSubSchema(connection.getSchema()));
-        RelNode logicalPlan = queryPlanner.getLogicalPlan("select color from parts where color='aka'");
+        RelNode logicalPlan = queryPlanner.getLogicalPlan("select id,color from parts where color='aka' and units>=5");
         System.out.println(logicalPlan.getDescription());
         System.out.println(RelOptUtil.toString(logicalPlan));
     }
