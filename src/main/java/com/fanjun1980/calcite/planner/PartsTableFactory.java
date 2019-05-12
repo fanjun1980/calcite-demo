@@ -1,4 +1,4 @@
-package com.fanjun1980.calcite.plan;
+package com.fanjun1980.calcite.planner;
 
 import org.apache.calcite.rel.type.RelDataType;
 import org.apache.calcite.schema.SchemaPlus;

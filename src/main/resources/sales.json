@@ -6,9 +6,9 @@
       "name": "SALES",
       "tables": [
         {
+          "name": "Orders",
           "type": "custom",
-          "name": "Parts",
-          "factory": "com.fanjun1980.calcite.planner.PartsTableFactory"
+          "factory": "com.fanjun1980.calcite.planner.OrdersTableFactory"
         }
       ]
     }
